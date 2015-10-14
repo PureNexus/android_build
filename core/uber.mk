@@ -196,7 +196,8 @@ LOCAL_DISABLE_GRAPHITE := \
 	fio \
 	libwebrtc_spl \
 	libpcap \
-	libFraunhoferAAC
+	libFraunhoferAAC \
+	libhwui
 
 GRAPHITE_FLAGS := \
 	-fgraphite \
