@@ -82,11 +82,11 @@ LOCAL_DISABLE_STRICT := \
 	mdnsd \
 	libstagefright_webm \
 	libc_bionic_ndk \
-    libc_dns \
-    libc_gdtoa \
-    libc_openbsd_ndk \
-    liblog \
-    libc \
+	libc_dns \
+	libc_gdtoa \
+	libc_openbsd_ndk \
+	liblog \
+	libc \
 	libbt-brcm_stack \
 	libandroid_runtime \
 	libandroidfw \
@@ -106,11 +106,11 @@ LOCAL_FORCE_DISABLE_STRICT := \
 	camera.msm8084 \
 	libstagefright_webm \
 	libc_bionic_ndk \
-    libc_dns \
-    libc_gdtoa \
-    libc_openbsd_ndk \
-    liblog \
-    libc \
+	libc_dns \
+	libc_gdtoa \
+	libc_openbsd_ndk \
+	liblog \
+	libc \
 	libbt-brcm_stack \
 	libandroid_runtime \
 	libandroidfw \
