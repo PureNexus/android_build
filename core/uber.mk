@@ -96,8 +96,8 @@ LOCAL_DISABLE_STRICT := \
 	ip \
 	libc_nomalloc \
 	linker \
-    sensors.flounder \
-    libnvvisualizer
+	sensors.flounder \
+	libnvvisualizer
 
 LOCAL_FORCE_DISABLE_STRICT := \
 	libziparchive-host \
@@ -122,9 +122,9 @@ LOCAL_FORCE_DISABLE_STRICT := \
 	ip \
 	libc_nomalloc \
 	linker \
-    libc_malloc \
-    sensors.flounder \
-    libnvvisualizer
+	libc_malloc \
+	sensors.flounder \
+	libnvvisualizer
 
 DISABLE_STRICT := \
 	-fno-strict-aliasing
@@ -152,8 +152,7 @@ LOCAL_DISABLE_KRAIT := \
 
 KRAIT_FLAGS := \
 	-mcpu=cortex-a15 \
-	-mtune=cortex-a15 \
-	-mvectorize-with-neon-quad
+	-mtune=cortex-a15
 
 #############
 # GCC Tunings
@@ -164,6 +163,23 @@ LOCAL_DISABLE_GCCONLY := \
 	libwebviewchromium_loader \
 	libwebviewchromium_plat_support
 
+ifeq (arm,$(TARGET_ARCH))
+GCC_ONLY := \
+	-fira-loop-pressure \
+	-fforce-addr \
+	-funsafe-loop-optimizations \
+	-funroll-loops \
+	-ftree-loop-distribution \
+	-fsection-anchors \
+	-ftree-loop-im \
+	-ftree-loop-ivcanon \
+	-ffunction-sections \
+	-fgcse-las \
+	-fgcse-sm \
+	-fweb \
+	-ffp-contract=fast \
+	-mvectorize-with-neon-quad
+else
 GCC_ONLY := \
 	-fira-loop-pressure \
 	-fforce-addr \
@@ -178,6 +194,7 @@ GCC_ONLY := \
 	-fgcse-sm \
 	-fweb \
 	-ffp-contract=fast
+endif
 
 ##########
 # GRAPHITE
