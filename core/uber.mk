@@ -97,7 +97,8 @@ LOCAL_DISABLE_STRICT := \
 	libc_nomalloc \
 	linker \
 	sensors.flounder \
-	libnvvisualizer
+	libnvvisualizer \
+	libskia
 
 LOCAL_FORCE_DISABLE_STRICT := \
 	libziparchive-host \
