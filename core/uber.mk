@@ -223,7 +223,8 @@ LOCAL_DISABLE_GRAPHITE := \
 	libpcap \
 	libFraunhoferAAC \
 	libhwui \
-	libavcodec
+	libavcodec \
+	libavformat
 
 GRAPHITE_FLAGS := \
 	-fgraphite \
