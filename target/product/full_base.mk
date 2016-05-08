@@ -28,8 +28,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.ringtone=Titania.ogg \
     ro.config.notification_sound=Tethys.ogg
 
-# Put en_US first in the list, so make it default.
-PRODUCT_LOCALES := en_US
+# Put es_ES first in the list, so make it default.
+PRODUCT_LOCALES := es_ES
 
 # Get some sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
