@@ -601,6 +601,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   #    oem_props, oem_dict, OPTIONS.info_dict))
   script.Print("********************")
   script.Print("**   Pure NeXus   **")
+  script.Print("**   unofficial   **")
+  script.Print("**  by tornado76  **")
   script.Print("********************")
 
   script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
